@@ -124,7 +124,6 @@ The project implements several security best practices to protect user data:
 git clone https://github.com/username/django-social-media.git
 cd django-social-media
 
-```
 
 
 2. **Create Virtual Environment**:
@@ -132,14 +131,10 @@ cd django-social-media
 python -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
 
-```
-
 
 3. **Install Dependencies**:
 ```bash
 pip install -r requirements.txt
-
-```
 
 
 4. **Database Configuration**:
@@ -147,43 +142,16 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 
-```
-
 
 5. **Create Admin Account**:
 ```bash
 python manage.py createsuperuser
-
-```
 
 
 6. **Run Development Server**:
 ```bash
 python manage.py runserver
 
-```
 
 
 
----
-
-## 📝 Project Details
-
-* 
-**Developer**: Sanket Suresh Nikam 
-
-
-* 
-**Institute**: Shri Swami Samarth Institute of Management and Technology 
-
-
-* 
-**University**: Savitribai Phule Pune University 
-
-
-* 
-**Academic Year**: 2024-2025 
-
-
-
-Would you like me to extract specific code snippets or technical diagrams from the document for this README?
