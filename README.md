@@ -1,39 +1,53 @@
 College mini Project 
 # Social Book - Django Social Media Application
 
-This project is a high-level Python web application built using the **Django framework**. It implements a secure, user-centric social networking platform that addresses common challenges like data privacy and security vulnerabilities.
+## Project Overview
 
-## 🚀 Key Features
+**Social Book** is a Django-based social media application developed as a mini-project for the Master in Computer Application (MCA) degree. The platform is designed to provide core social networking functionalities while prioritizing data privacy, security, and user control.
 
-* 
-**User Authentication**: Robust registration with email verification, secure login/logout, and password reset mechanisms.
+---
 
-
-* 
-**Profile Management**: Users can customize their profiles, upload avatars and cover photos, and view followers/following lists.
-
+## 🛠 Features
 
 * 
-**Post Management**: Full CRUD operations for posts including text and image uploads, with a dynamic news feed.
+**User Authentication**: Secure registration with email verification, login/logout, and password reset.
 
 
 * 
-**Social Interactions**: Real-time likes, comments, and the ability to follow or unfollow other users.
+**Profile Management**: Customizable user profiles including bios, avatars, and cover photos.
 
 
 * 
-**Content Discovery**: Functionality to search for users by username and explore trending content.
-
-
-
-## 🛠️ Technology Stack
-
-* 
-**Backend**: Python 3.x, Django 4.x, Django REST Framework.
+**Content Creation**: Create, edit, and delete posts containing both text and images.
 
 
 * 
-**Frontend**: HTML5, CSS3, JavaScript, jQuery, and Tailwind CSS/Bootstrap.
+**Social Interactions**: Real-time "Like" system and commenting capabilities on posts.
+
+
+* 
+**Social Connections**: Follow and unfollow system to build a personalized network.
+
+
+* 
+**Discovery**: Search functionality to find users by username and explore trending content.
+
+
+
+---
+
+## 💻 Tech Stack
+
+* 
+**Backend**: Python 3.x and Django 4.x.
+
+
+* 
+**API**: Django REST Framework.
+
+
+* 
+**Frontend**: HTML5, CSS3, JavaScript , and Tailwind CSS/Bootstrap.
 
 
 * 
@@ -41,66 +55,135 @@ This project is a high-level Python web application built using the **Django fra
 
 
 * 
-**Development Tools**: Git, VS Code/PyCharm, Postman, and Django Debug Toolbar.
+**Deployment**: Gunicorn, Nginx, and AWS/DigitalOcean.
 
 
 
-## 🏗️ System Architecture
+---
 
-The application follows the **Model-View-Template (MVT)** pattern:
+## 🏗 System Architecture
 
-* 
-**Model**: Defines the data structure (Users, Posts, Comments, Likes).
-
+The application utilizes the **Model-View-Template (MVT)** architectural pattern:
 
 * 
-**View**: Handles business logic and processes user requests.
+**Model**: Defines the data structure and database schema (User, Post, Comment, Like).
 
 
 * 
-**Template**: Manages the user interface and presentation layer.
-
-
-
-## 🔒 Security Measures
-
-The platform prioritizes security by implementing:
-
-* 
-**Built-in Protection**: Default defense against CSRF, XSS, and SQL injection.
+**View**: Contains business logic and handles user requests.
 
 
 * 
-**Secure Authentication**: Password hashing using PBKDF2 and permission-based access controls.
+**Template**: Manages the presentation layer using HTML for the user interface.
+
+
+
+---
+
+## 🔒 Security
+
+The project implements several security best practices to protect user data:
+
+* 
+**CSRF Protection**: Enabled by default to prevent cross-site request forgery.
 
 
 * 
-**Data Security**: Environment variables for sensitive data and HTTPS enforcement for production.
-
-
-
-## 📈 Performance Highlights
-
-* 
-**Average Page Load Time**: 1.2 seconds.
+**XSS Prevention**: Utilizes Django's template auto-escaping.
 
 
 * 
-**API Response Time**: 10 milliseconds.
+**SQL Injection Prevention**: Secured via the Django Object-Relational Mapping (ORM).
 
 
 * 
-**Concurrent Users**: Efficiently handles up to 100 simultaneous users.
+**Password Hashing**: Uses PBKDF2 for secure credential storage.
 
 
 
-## 📝 Setup and Installation
+---
 
-(Based on Annexure J)
+## 🚀 Installation and Setup
 
-1. **Prerequisites**: Ensure Python 3.8+ and `pip` are installed.
-2. **Clone the Repository**: `git clone https://...`
-3. **Virtual Environment**: Create and activate a `virtualenv`.
-4. **Dependencies**: Install required packages using `pip install -r requirements.txt`.
-5. **Database**: Run migrations using `python manage.py migrate`.
-6. **Run Server**: Start the development server with `python manage.py runserver`.
+### Prerequisites
+
+* Python 3.8+ 
+
+
+* pip 
+
+
+* virtualenv 
+
+
+
+### Setup Steps
+
+1. **Clone the Repository**:
+```bash
+git clone https://github.com/username/django-social-media.git
+cd django-social-media
+
+```
+
+
+2. **Create Virtual Environment**:
+```bash
+python -m venv venv
+source venv/bin/activate # On Windows: venv\Scripts\activate
+
+```
+
+
+3. **Install Dependencies**:
+```bash
+pip install -r requirements.txt
+
+```
+
+
+4. **Database Configuration**:
+```bash
+python manage.py makemigrations
+python manage.py migrate
+
+```
+
+
+5. **Create Admin Account**:
+```bash
+python manage.py createsuperuser
+
+```
+
+
+6. **Run Development Server**:
+```bash
+python manage.py runserver
+
+```
+
+
+
+---
+
+## 📝 Project Details
+
+* 
+**Developer**: Sanket Suresh Nikam 
+
+
+* 
+**Institute**: Shri Swami Samarth Institute of Management and Technology 
+
+
+* 
+**University**: Savitribai Phule Pune University 
+
+
+* 
+**Academic Year**: 2024-2025 
+
+
+
+Would you like me to extract specific code snippets or technical diagrams from the document for this README?
